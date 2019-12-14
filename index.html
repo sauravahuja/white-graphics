@@ -15,6 +15,9 @@
     <meta name="description" content="Creative and digital agency in Mumbai & Singapore with expertise in creative strategy, digital strategy, brand design, UI design, video and creative content.">
     <meta name="keywords" content="UI, UX, Mobile App, Web Design, Web Development, Responsive website, Creative website, Video, Creative Content">
 
+    <!-- BOOTSTRAP -->
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="./images/icon/favicon.png">
 
@@ -43,52 +46,340 @@
 </head>
 
 <body>
-
-<!--***********************************************************************************************************************
-                                                   HOME SECTION
-**********************************************************************************************************************-->
+    <!--SECTION HOME-->
     <section id="home">
-        <div id="home-img" class="parallax">
-            <div class="home-content-inner text-center">
-                <div class="content-box-lg">
-                    <div id="home-content">
-                        <h1>watch out<br>the modern responsive website</h1>
-                        <a class="btn btn-general btn-basic">View our work</a>
+        <div class="container-fluid no-gutter">
+            <div class="wrapper parallax">
+                <div class="home-content text-center">
+                    <h1 class="text-uppercase m-0">WATCH OUT<br>THE MODERN RESPONSIVE WEBSITE!</h1>
+                    <a href="" class="btn btn-general btn-basic">View our products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/SECTION HOME-->
+
+    <!--SECTION SERVICES-->
+    <section id="services">
+        <div class="container">
+            <div class="content-box-sm">
+                <div class="section-head text-center">
+                    <h3 class="heading">Services</h3>
+                    <span class="blue-span"></span>
+                </div>
+                <div class="services-wrapper">
+                    <div class="row m-t-30">
+                        <div class="col-md-4">
+                            <div class="row service">
+                                <div class="col-md-4">
+                                    <div class="service-icon text-center">
+                                        <i class="fa fa-paint-brush"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="service-content">
+                                        <h5>Web Design</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, inventore.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row service">
+                                <div class="col-md-4">
+                                    <div class="service-icon text-center">
+                                        <i class="fa fa-laptop"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="service-content">
+                                        <h5>Web Development</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, inventore.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row service">
+                                <div class="col-md-4">
+                                    <div class="service-icon text-center">
+                                        <i class="fa fa-tablet"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="service-content">
+                                        <h5>Web Design</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, inventore.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row m-t-30">
+                        <div class="col-md-4">
+                            <div class="row service">
+                                <div class="col-md-4">
+                                    <div class="service-icon text-center">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="service-content">
+                                        <h5>Web Design</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, inventore.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row service">
+                                <div class="col-md-4">
+                                    <div class="service-icon text-center">
+                                        <i class="fa fa-pencil-square-o"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="service-content">
+                                        <h5>Web Design</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, inventore.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row service">
+                                <div class="col-md-4">
+                                    <div class="service-icon text-center">
+                                        <i class="fa fa-support"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="service-content">
+                                        <h5>Web Design</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, inventore.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-<!--***********************************************************************************************************************
-                                                   /HOME SECTION
-**********************************************************************************************************************-->
-   
-<!--***********************************************************************************************************************
-                                                   SERVICE SECTION
-**********************************************************************************************************************-->
-   
-    <section id="service">
-        <div class="content-box-sm">
-        <div class="heading-dark">
-            <h3>Services</h3>
-            <span></span>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                WEB DESIGN
+    <!--/SECTION SERVICES-->
+    <!--SECTION ABOUT-->
+    <section id="about">
+        <div class="about-container m-t-50">
+            <div class="about-bg parallax"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="content-box-lg m-t-50">
+                            <div class="section-head text-center">
+                                <h3 class="heading">About white graphics</h3>
+                                <span class="blue-span"></span>
+                            </div>
+                            <div class="about-wrapper">
+                                <p class="m-t-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quo, veritatis consectetur nesciunt minima doloribus voluptas similique, fugit eum ad possimus. Eveniet aliquid fugiat repudiandae assumenda soluta! Ducimus labore, aut.</p>
+                                <div class="text-center m-t-30">
+                                    <a href="" class="btn btn-general btn-blue">Our Work</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                
-            </div>
-            <div class="col-md-4">
-                
-            </div>
-        </div>
         </div>
     </section>
-<!--***********************************************************************************************************************
-                                                   /SERVICE SECTION
-**********************************************************************************************************************-->
+    <!--/SECTION ABOUT-->
+    <!-- SECTION WORK-->
+    <section id="work">
+        <div class="content-box-md">
+            <div class="section-head text-center m-b-30">
+                <h3 class="heading">OUR WORK</h3>
+                <span class="blue-span"></span>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="works-wrapper">
+                        <div class="col-md-3">
+                            <div class="work">
+                                <a href="./images/works/1.jpg">
+                                    <img src="./images/works/1.jpg" alt="" class="img-responsive">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="work">
+                                <a href="./images/works/2.jpg">
+                                    <img src="./images/works/2.jpg" alt="" class="img-responsive">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="work">
+                                <a href="./images/works/3.jpg">
+                                    <img src="./images/works/3.jpg" alt="" class="img-responsive">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="work">
+                                <a href="./images/works/4.jpg">
+                                    <img src="./images/works/4.jpg" alt="" class="img-responsive">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="works-wrapper">
+                        <div class="col-md-3">
+                            <div class="work">
+                                <a href="./images/works/5.jpg">
+                                    <img src="./images/works/5.jpg" alt="" class="img-responsive">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="work">
+                                <a href="./images/works/6.jpg">
+                                    <img src="./images/works/6.jpg" alt="" class="img-responsive">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="work">
+                                <a href="./images/works/3.jpg">
+                                    <img src="./images/works/7.jpg" alt="" class="img-responsive">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="work">
+                                <a href="./images/works/4.jpg">
+                                    <img src="./images/works/8.jpg" alt="" class="img-responsive">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/SECTION WORK-->
+    <!--SECTION TEAM-->
+    <section id="team">
+        <div class="container">
+            <div class="section-head text-center m-b-30">
+                <h3 class="heading">OUR TEAM</h3>
+                <span class="blue-span"></span>
+            </div>
+            <div class="team-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="team-members" class="owl-carousel owl-theme">
+                            <div class="member">
+                                <img src="./images/team/team-1.jpg" alt="" class="img-responsive">
+                                <div class="team-description text-center">
+                                    <h3>Daniel Watrous</h3>
+                                    <p>CEO</p>
+                                    <div class="social-link">
+                                        <i class="fa fa-facebook"></i>
+                                        <i class="fa fa-twitter"></i>
+                                        <i class="fa fa-google-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member">
+                                <img src="./images/team/team-2.jpg" alt="" class="img-responsive">
+                                <div class="team-description text-center">
+                                    <h3>Daniel Watrous</h3>
+                                    <p>CEO</p>
+                                    <div class="social-link">
+                                        <i class="fa fa-facebook"></i>
+                                        <i class="fa fa-twitter"></i>
+                                        <i class="fa fa-google-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member">
+                                <img src="./images/team/team-3.jpg" alt="" class="img-responsive">
+                                <div class="team-description text-center">
+                                    <h3>Daniel Watrous</h3>
+                                    <p>CEO</p>
+                                    <div class="social-link">
+                                        <i class="fa fa-facebook"></i>
+                                        <i class="fa fa-twitter"></i>
+                                        <i class="fa fa-google-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member">
+                                <img src="./images/team/team-4.jpg" alt="" class="img-responsive">
+                                <div class="team-description text-center">
+                                    <h3>Daniel Watrous</h3>
+                                    <p>CEO</p>
+                                    <div class="social-link">
+                                        <i class="fa fa-facebook"></i>
+                                        <i class="fa fa-twitter"></i>
+                                        <i class="fa fa-google-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member">
+                                <img src="./images/team/team-5.jpg" alt="" class="img-responsive">
+                                <div class="team-description text-center">
+                                    <h3>Daniel Watrous</h3>
+                                    <p>CEO</p>
+                                    <div class="social-link">
+                                        <i class="fa fa-facebook"></i>
+                                        <i class="fa fa-twitter"></i>
+                                        <i class="fa fa-google-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/SECTION TEAM-->
+    <!--SECTION TESTIMOINALS-->
+    <section id="testimonials" class="parallax m-t-50">
+        <div class="container">
+            <div class="section-head text-center m-t-50 m-b-50">
+                <h3 class="heading">WHAT OUR CUSTOMERS SAY</h3>
+                <span class="blue-span"></span>
+            </div>
+            <div id="customer-reviews" class="owl-carousel owl-theme">
+                <div class="review text-center">
+                    <img src="./images/clients-review/client-1.jpg" alt="" class="img-responsive img-circle">
+                    <p class="p-t-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam repudiandae obcaecati in ipsum eum, tempore, debitis animi labore corrupti, ipsa error dolore accusantium perferendis aliquam quasi, eius libero. Ab, laudantium.</p>
+                    <h3>Daniel Watrous</h3>
+                    <p class="p-t-10">CEO &amp; FOUNDER -GOOGLE</p>
+                </div>
+                <div class="review text-center">
+                    <img src="./images/clients-review/client-2.jpg" alt="" class="img-responsive img-circle">
+                    <p class="p-t-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam repudiandae obcaecati in ipsum eum, tempore, debitis animi labore corrupti, ipsa error dolore accusantium perferendis aliquam quasi, eius libero. Ab, laudantium.</p>
+                    <h3>Daniel Watrous</h3>
+                    <p class="p-t-10">CEO &amp; FOUNDER -GOOGLE</p>
+                </div>
+                <div class="review text-center">
+                    <img src="./images/clients-review/client-2.jpg" alt="" class="img-responsive img-circle">
+                    <p class="p-t-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam repudiandae obcaecati in ipsum eum, tempore, debitis animi labore corrupti, ipsa error dolore accusantium perferendis aliquam quasi, eius libero. Ab, laudantium.</p>
+                    <h3>Daniel Watrous</h3>
+                    <p class="p-t-10">CEO &amp; FOUNDER -GOOGLE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/SECTION TESTIMOINALS-->
     <!--JAVA SCRIPT SCRIPTS-->
     <!-- JQuery -->
     <script src="js/jquery.min.js"></script>

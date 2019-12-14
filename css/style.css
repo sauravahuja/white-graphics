@@ -28,11 +28,14 @@
     --mainGrey: #41464B;
     --mainDarkGrey: #3A3F43;
     --mainWhite: #ffffff;
+    --lightGrey: #aaa;
 }
 
 body {
+/*
     margin: 0;
     padding: 0;
+*/
     height: 7000px;
 }
 
@@ -40,9 +43,9 @@ body {
                                                     BUTTON SECTION
 **************************************************************************************************************************/
 .btn {
-    padding: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .btn-general {
@@ -55,13 +58,47 @@ body {
     transition: all 0.3s ease;
     text-transform: uppercase;
     font-size: 17px;
-    font-weight: 700;
+    font-weight: 400;
     cursor: pointer;
 }
 
 .btn-basic:hover {
     background: var(--mainWhite);
     color: var(--mainGrey);
+}
+
+.btn-blue {
+    color: var(--mainBlue);
+    border: 2px solid var(--mainBlue);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.btn-blue:hover{
+    color: var(--mainWhite)!important;
+    background: var(--mainBlue)!important;
+}
+/**************************************************************************************************************************
+                                                    GENERAL CLASSES
+**************************************************************************************************************************/
+.no-gutter{
+    padding: 0;
+    margin: 0;
+}
+.heading{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--mainGrey);
+    font-size: 30px;
+}
+.blue-span{
+    width: 30px;
+    height: 3px;
+    background: var(--mainBlue);
+    border-radius: 10px;
+    margin-top: 20px;
 }
 /**************************************************************************************************************************
                                                     HOME SECTION
@@ -70,22 +107,125 @@ body {
     height: 100vh;
     width: 100%;
 }
-
-#home-img {
-    width: 100%;
-    height: 100%;
-    background: url('../images/home-bg/bg-home.jpg') no-repeat;
-    background-size: cover;
-    transform: scale(1);
+.wrapper{
+    background: url('../images/home-bg/bg-home.jpg');
+    height: 100vh;
 }
-#home-content h1 {
+.home-content{
+    padding: 36vh 0;
+}
+.home-content h1{
+    font-weight: 700;
     color: var(--mainWhite);
-    text-transform: uppercase;
     font-size: 55px;
-    padding: 20px;
-    padding-bottom: 7px;
-    line-height: 53px;
+}
+.home-content .btn{
+    margin-top: 20px;
 }
 /**************************************************************************************************************************
-                                                    SERVICES SECTION
+                                                    SERVICE SECTION
 **************************************************************************************************************************/
+.services-wrapper .service-icon{
+    font-size: 40px;
+    color: var(--mainBlue);
+    padding:15px 20px ;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+.service-content h5{
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.service:hover .service-icon{
+    background: var(--mainBlue);
+    color: var(--mainWhite);
+}
+/**************************************************************************************************************************
+                                                    ABOUT SECTION
+**************************************************************************************************************************/
+.about-container{
+    position: relative;
+}
+.about-bg{
+    background: url('../images/about-bg/bg-about.jpg');
+    width: 800px;
+    height: 450px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-left: solid 200px #fff;
+    border-top: solid 700px transparent;
+}
+.about-wrapper p{
+    font-size: 16px;
+    color: var(--lightGrey)
+}
+/**************************************************************************************************************************
+                                                    WORKS SECTION
+**************************************************************************************************************************/
+.works-wrapper .col-md-3{
+    padding: 0;
+}
+.work{
+    overflow: hidden;
+}
+.work img{
+    transition: all 0.3s ease-in-out;
+}
+.work img:hover{
+    transform: scale(1.4);
+   
+}
+/**************************************************************************************************************************
+                                                    TEAM SECTION
+**************************************************************************************************************************/
+#team .owl-theme .owl-dots .owl-dot.active span{
+    background: var(--mainBlue);
+    margin-top: 50px;
+}
+.team-description h3{
+    font-weight: 700;
+}
+.team-description p{
+    color: var(--mainBlue);
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 700;
+}
+.social-link i{
+    margin: 0 15px;
+    color: var(--mainGrey);
+    font-size: 18px;
+}
+.team-description .social-link i:hover{
+    color: var(--mainBlue);
+}
+/**************************************************************************************************************************
+                                                    TESTIMONIALS SECTION
+**************************************************************************************************************************/
+#testimonials{
+    background: url(../images/clients-review/bg-testimonials.jpg);
+}
+.review img{
+    max-width: 120px;
+    margin: 0 auto;
+}
+.review h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+.review{
+    width: 60%;
+    margin: 0 auto;
+    color: var(--mainWhite);
+}
+#testimonials .owl-theme .owl-dots .owl-dot.active span{
+    background: var(--mainBlue);
+}
+#testimonials .owl-theme .owl-dots{
+    margin-bottom: 50px;
+}
+#testimonials .heading{
+    color: var(--mainWhite);
+}
