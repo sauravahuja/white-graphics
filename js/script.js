@@ -6,7 +6,10 @@
 
 $('.works-wrapper').magnificPopup({
     delegate:'a',
-    type: 'image'
+    type: 'image',
+    gallery: {
+        enabled: 'true'
+    }
 });
 
 $(document).ready(function(){
