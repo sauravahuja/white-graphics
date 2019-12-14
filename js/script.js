@@ -27,3 +27,14 @@ $(document).ready(function(){
         smartSpeed: 700
     });
 });
+$('.counter').counterUp({
+    time: 1500
+});
+$(document).ready(function(){
+    $('.clients-container').owlCarousel({
+        items: 6,
+        autoplay: 2000,
+        loop: 'true',
+        smartSpeed: 700
+    })
+})

@@ -150,12 +150,12 @@ body {
 .about-bg{
     background: url('../images/about-bg/bg-about.jpg');
     width: 800px;
-    height: 450px;
+    height: 430px;
     position: absolute;
     right: 0;
     top: 0;
     border-left: solid 200px #fff;
-    border-top: solid 700px transparent;
+    border-top: solid 683px transparent;
 }
 .about-wrapper p{
     font-size: 16px;
@@ -228,4 +228,90 @@ body {
 }
 #testimonials .heading{
     color: var(--mainWhite);
+}
+/**************************************************************************************************************************
+                                                    TESTIMONIALS SECTION
+**************************************************************************************************************************/
+.pricing{
+    border: solid 2px var(--mainBlue);
+    border-radius: 10px;
+    margin: auto 10px;
+}
+#pricing .bg-blue{
+    background: var(--mainBlue);
+    color: var(--mainWhite);
+    border-radius: 10px;
+    height: 500px;
+}
+.pricing-head-blue{
+    display: inline-block;
+    background: var(--mainBlue);
+    color: var(--mainWhite);
+    padding: 4px 15px;
+    font-weight: 700;
+}
+.pricing-head-white{
+    display: inline-block;
+    background: var(--mainWhite);
+    color: var(--mainBlue);
+    padding: 4px 15px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.pricing h2{
+    padding-top: 20px;
+    font-weight: 700;    
+    font-size: 56px;
+    color: var(--mainGrey);
+}
+.pricing ul li{
+    list-style: none;
+    padding-top: 15px;
+}    
+.pricing ul{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--lightGrey);
+}
+.bg-blue .pricing ul,.bg-blue .pricing h2{
+    color: var(--mainWhite);
+}
+#pricing .btn-basic:hover{
+    color: var(--mainBlue);
+}
+
+/**************************************************************************************************************************
+                                                    STATS SECTION
+**************************************************************************************************************************/
+.stats-bg{
+    background: url('../images/status-bg/bg-stats.jpg');
+    height: 500px;
+    position: relative;
+}
+#stats i{
+    color: var(--mainBlue);
+}
+
+.stats-overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+}
+.stats-item h3{
+    color: var(--mainWhite);
+    font-size: 32px;
+    font-weight: 700;
+}
+.stats-item p{
+    color: var(--mainWhite);
+    font-size: 16px;
+}
+#stats .section-head .heading{
+    color: var(--mainWhite);
+     position: relative;
+} 
+#stats .section-head{
+    position: relative;
 }
