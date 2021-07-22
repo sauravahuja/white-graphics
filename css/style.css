@@ -159,7 +159,7 @@ body {
 }
 .about-wrapper p{
     font-size: 16px;
-    color: var(--lightGrey)
+    color: var(--mainGrey)
 }
 /**************************************************************************************************************************
                                                     WORKS SECTION
@@ -239,9 +239,10 @@ body {
 }
 #pricing .bg-blue{
     background: var(--mainBlue);
+    color: var(--mainWhite) !important;
+}
+#pricing .bg-blue ul{
     color: var(--mainWhite);
-    border-radius: 10px;
-    height: 500px;
 }
 .pricing-head-blue{
     display: inline-block;
@@ -285,7 +286,7 @@ body {
 **************************************************************************************************************************/
 .stats-bg{
     background: url('../images/status-bg/bg-stats.jpg');
-    height: 500px;
+    /* height: 500px; */
     position: relative;
 }
 #stats i{
@@ -367,6 +368,9 @@ body {
 #footer{
     background: var(--mainDarkGrey);
     color: var(--mainWhite);
+}
+#footer ul{
+    padding-left: 0%;
 }
 ul li{
     display: inline-block;
